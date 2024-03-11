@@ -6,10 +6,11 @@
   <title>Seu Nome | Portfólio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="tema-escuro">
   <header>
     <h1>Seu Nome</h1>
     <p>Descrição breve sobre você e suas habilidades</p>
+    <button class="botao-menu">Menu</button>
   </header>
   <main>
     <section class="sobre">
@@ -23,13 +24,13 @@
           <img src="imagem-projeto-1.jpg" alt="Projeto 1">
           <h3>Projeto 1</h3>
           <p>Descrição breve do projeto 1.</p>
-          <a href="link-projeto-1">Ver mais</a>
+          <a href="link-projeto-1" class="botao">Ver mais</a>
         </li>
         <li>
           <img src="imagem-projeto-2.jpg" alt="Projeto 2">
           <h3>Projeto 2</h3>
           <p>Descrição breve do projeto 2.</p>
-          <a href="link-projeto-2">Ver mais</a>
+          <a href="link-projeto-2" class="botao">Ver mais</a>
         </li>
         </ul>
     </section>
@@ -40,7 +41,7 @@
         <input type="text" name="nome" placeholder="Nome">
         <input type="email" name="email" placeholder="Email">
         <textarea name="mensagem" placeholder="Mensagem"></textarea>
-        <button type="submit">Enviar</button>
+        <button type="submit" class="botao">Enviar</button>
       </form>
     </section>
   </main>
@@ -51,5 +52,6 @@
       <li><a href="https://www.github.com/seunome">GitHub</a></li>
       </ul>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

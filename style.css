@@ -3,6 +3,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  color: #fff;
+  background-color: #222;
 }
 
 h1, h2, h3 {
@@ -15,73 +17,63 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #ccc;
 }
 
 a:hover {
-  color: #666;
+  color: #fff;
 }
 
-/* Header */
-header {
-  background-color: #ccc;
+/* Tema escuro */
+.tema-escuro {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Botões */
+.botao {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #666;
+}
+
+/* Menu */
+.botao-menu {
+  float: right;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .botao-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-ativo {
+    display: block;
+  }
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
   padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  margin-top: 0;
-}
-
-header p {
-  font-size: 16px;
-}
-
-/* Main */
-main {
-  padding: 20px;
-}
-
-/* Seção Sobre */
-.sobre {
-  margin-bottom: 20px;
-}
-
-/* Seção Portfólio */
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio li {
-  margin: 10px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.portfolio li img {
-  width: 100%;
-}
-
-.portfolio li h3 {
-  margin-top: 10px;
-}
-
-.portfolio li p {
+footer p {
   margin-bottom: 10px;
 }
 
-.portfolio li a {
-  font-size: 14px;
-  color: #666;
-}
-
-/* Seção Contato */
-.contato {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.contato form {
-  display: flex;
-  flex-direction: column;
+footer ul {
